@@ -1,5 +1,8 @@
-<app-photo
-    *ngFor="let photo of photos"
+<ol class="list-unstyled">
+  <li *ngFor="let photo of photos" class="col-4">
+    <app-photo
     [url]="photo.url"
     [description]="photo.description">
-</app-photo>
+    </app-photo>
+  </li>
+</ol>
